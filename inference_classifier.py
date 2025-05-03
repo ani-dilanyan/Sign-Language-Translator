@@ -18,7 +18,7 @@ if not cap.isOpened():
 mp_hands = mp.solutions.hands
 mp_drawing = mp.solutions.drawing_utils
 mp_drawing_styles = mp.solutions.drawing_styles
-hands = mp_hands.Hands(static_image_mode=False, min_detection_confidence=0.3, min_tracking_confidence=0.3)
+hands = mp_hands.Hands(static_image_mode=False, min_detection_confidence=0.9, min_tracking_confidence=0.9)
 
 # Define label mapping
 labels_dict = {i: chr(65 + i) for i in range(26)}  # A-Z mapping
